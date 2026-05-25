@@ -13,10 +13,10 @@
         function getvalue() {
             const randval = math.floor(math.random() * 100) + 1; // 1 ~ 100 사이 랜덤값
             const ptag = document.querySelector('#numbers');
-            ptag.append('${randval} 점');
+            ptag.textContent = '${randval} 점';
 
             if(randval >= 90) {
-                alert('점수:' + randval + ", gkrwja : A");
+                alert('점수:' + randval + ", 학점 : A");
             }else if(randval >= 80) {
                 alert('점수 : ${randval}, 학점 : B');
             }else if(randval >= 70) {
@@ -26,7 +26,6 @@
             }else {
                 alert('점수 : ${randval}, 학점 : D');
             }
-        
         }
 
     </script>
